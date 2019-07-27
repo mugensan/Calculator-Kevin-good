@@ -1,21 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-              <!--android:background="@color/labelColor"-->
-
-
+              android:layout_height="match_parent" tools:ignore="ExtraText">
+    <!--android:background="@color/labelColor"-->
 
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:id="@+id/tv_user_name"
-              android:text="@string/label_name"
+              tools:text="@string/tv_name"
               android:textColor="@color/labelColorBackground"
-              android:textSize="70sp"
+              android:textSize="40sp"
 
 
     />
 
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/et_name"
+              android:hint="@string/hint_name"
+              android:layout_marginStart="5dp"
+              android:inputType="text"
+
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save"
+            android:text="@string/btn_save"
+            android:layout_marginTop="@dimen/home_margin_top"
+            android:layout_gravity="center_horizontal"
+
+
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="2"
+                  android:layout_marginTop="@dimen/home_margin_top"
+
+    >
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_one"
+                  android:hint="Enter a number"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+
+        />
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_two"
+                  android:hint="Enter a number"
+                  android:layout_marginStart="@dimen/home_margin_top"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+        />
+
+
+
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_result"
+              tools:text="Result"
+              android:textSize="30sp"
+
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:text="add"
+            android:layout_gravity="center_horizontal"
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="2"
+                  android:layout_marginTop="@dimen/home_margin_top"
+
+    >
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_Sub1"
+                  android:hint="Enter a number"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+
+        />
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_sub2"
+                  android:hint="Enter a number"
+                  android:layout_marginStart="@dimen/home_margin_top"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+        />
+
+
+
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_result_sub"
+              tools:text="Resultmin"
+              android:textSize="30sp"
+
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sub"
+            android:text="-"
+            android:layout_gravity="center_horizontal"
+    />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="2"
+                  android:layout_marginTop="@dimen/home_margin_top"
+
+    >
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_multi1"
+                  android:hint="Enter a number"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+
+        />
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_multi2"
+                  android:hint="Enter a number"
+                  android:layout_marginStart="5dp"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+        />
+
+
+
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_result_prod"
+              tools:text="Resultmulti"
+              android:textSize="30sp"
+
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_multi"
+            android:text="*"
+            android:layout_gravity="center_horizontal"
+    />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="2"
+                  android:layout_marginTop="@dimen/home_margin_top"
+
+    >
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_div1"
+                  android:hint="Enter a number"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+
+        />
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/et_number_div2"
+                  android:hint="Enter a number"
+                  android:layout_marginStart="5dp"
+                  android:inputType="number"
+                  android:layout_weight="1"
+
+        />
+
+
+
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_result_div"
+              tools:text="Resultdiv"
+              android:textSize="30sp"
+
+    />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_div"
+            android:text="/"
+            android:layout_gravity="center_horizontal"
+    />
+
+
+
+
+
 </LinearLayout>
+
+
